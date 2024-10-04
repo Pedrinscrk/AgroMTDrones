@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="/AgroMtDronesProject-main/SRC/CSS/loginStyle.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <div class="illustration">
+                <!-- Imagem ou ilustração -->
+                <img src="/AgroMtDronesProject-main/SRC/IMG/INDEX/LogoPequenaDrone.png" alt="Ilustração">
+               
+            </div>
+        </div>
+        <div class="login-right">
+            <form class="login-form">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="username">Usuário ou Email</label>
+                    <input type="text" id="username" placeholder="Digite seu usuário ou email" required>
+                    <span class="error" id="username-error">Formato incorreto. Exemplo: Agromtdrone@gmail.com</span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Digite sua senha" required>
+                        <i class="eye-icon" onclick="togglePassword()">👁</i>
+                    </div>
+                    <span class="error" id="password-error">A senha deve ter pelo menos 8 caracteres.</span>
+                </div>
+                <div class="remember-recover">
+                    <label>
+                        <input type="checkbox" id="remember-me"> Lembre-se de mim
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit">Login</button>
+                <div class="social-login">
+                    <p>Ou logar com</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="/AgroMtDronesProject-main/SRC/IMG/INDEX/Logo Facebook.png" alt="Facebook" class="social-logo"></a>
+                        <a href="#"><img src="/AgroMtDronesProject-main/SRC/IMG/INDEX/Logo Google.png" alt="Google" class="social-logo"></a>
+                        <a href="#"><img src="/AgroMtDronesProject-main/SRC/IMG/INDEX/Logo Applee.png" alt="Apple" class="social-logo"></a>
+                    </div>
+                </div>
+                
+                <p class="signup-link">Não tem uma conta? <a href="#">Inscreva-se</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="/AgroMtDronesProject-main/SRC/SCRIPT/loginScript.js"></script>
+</body>
+</html>

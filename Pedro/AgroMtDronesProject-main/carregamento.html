@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TelaDeCarregamento</title>
+</head>
+<body>
+  
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      transform: scale(3);
+      background-color: white;
+    }
+    .c-loader{
+      width: 50px;
+      height: 50px;
+      border: 6px solid lightgray;
+      border-radius: 50%;
+      border-top-color: lightblue;
+      animation: is-rotating 1s infinite;
+    }
+   
+    @keyframes is-rotating{
+      to {
+       transform: rotate(1turn);
+      }
+    }
+    
+  </style>
+  
+  <div class="c-loader"></div>
+  
+</body>
+</html>

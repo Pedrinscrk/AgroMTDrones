@@ -1,0 +1,172 @@
+body {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    background-image: url('/src/img/bodyBackground3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*height: 100vh;*/
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New';
+  }
+  
+  input {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #f2f2f2, #d9d9d9); /* Gradiente em tons de cinza */
+    font-size: 16px;
+    font-family: 'courier new';
+    color: #333;
+    outline: none;
+    box-shadow: 1.6px 1.6px 2px #888888;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #999;
+    background-image: linear-gradient(to right, #e0e0e0, #b3b3b3);
+  }
+  
+  input.error {
+    border: 2px solid #ff4d4d; /* Borda vermelha para erro */
+    animation: shake 0.3s; /* Animação de shake */
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  input.success {
+    border: 2px solid #4CAF50; 
+    background-color: #eaf5ea;
+    background-position: right 10px center;
+  }
+  
+  button {
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #888888;
+    transition: background-color 0.3s, transform 0.3s;
+    outline: none;
+    opacity: 0.9;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:focus {
+    outline: 2px solid #2E7D32; /* Contorno verde escuro ao focar */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Encolhe ligeiramente ao clicar */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button {
+    animation: pulse 2s infinite;
+  } 
+  
+  #registrarBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  label{
+    margin-left: 7px;
+  }
+  
+  #nomeEsobrenome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  legend {
+    border-radius: 100%;
+    border: 2px solid #2e8b57;
+    background-color: transparent;
+    color: #2e8b57;
+    font-size: 70px;
+    text-align: center;
+  }
+  
+  fieldset {
+    box-shadow: rgba(0, 0, 0, 0.15) 2.6px 2.6px 2.6px;
+    height: 500px;
+    width: 400px ;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    margin-top: 9px;
+  }
+  
+  a:hover{
+    font-size: 19px;
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 42px;
+    color: #2e8b57;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra leve para criar profundidade */
+    letter-spacing: 1.5px; /* Aumenta o espaçamento entre as letras */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out; /* Transição suave para efeitos */
+  }
+  
+  h1:hover {
+    color: #3cb371;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  #divNS {
+    display: flex;
+    justify-content: column;
+  }

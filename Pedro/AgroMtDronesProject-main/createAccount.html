@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/AgroMtDronesProject-main/SRC/CSS/createAccount.css">
+  <title>Create Account</title>
+</head>
+<body>
+  <fieldset>
+   <!-- <legend><i class="bi bi-person-fill"></i></legend> -->
+    <form>
+      
+      <h1>Create Account</h1>
+      <div id="nomeEsobrenome">
+        <div class="divNS">
+      <!--Nome-->
+    <label for="nome">Nome<font color="red">*</font></label>
+    <input id="nome" type="text" required minlegth="8" placeholder="Usuário">
+    </div>
+    <div class="divNS">
+     <!--Sobrenome-->
+    <label for="sobrenome">Sobrenome</label>
+    <input id="sobrenome" type="text" minlegth="3" placeholder="Cliente">
+    </div>
+    </div>
+    <!--Email-->
+    <label for="email">Email<font color="red">*</font></label>
+    <input id="email" type="email" required placeholder="usario@gmail.com">
+    <!--Senha-->
+    <label for="senha">Senha<font color="red">*</font></label>
+    <input class="senha" type="password" required minlegth="8" placeholder="">
+    <!--Confirmar senha-->
+    <label for="senha">Confirmar Senha<font color="red">*</font></label>
+    <input  class="senha" type="password" required minlegth="8" placeholder="">
+    <!--Butão-->
+    <div id="registrarBtn">
+    <button type="submit">Registrar-se</button>
+    </div>
+    <a href="login.html">já tem uma conta ?</a>
+    </form>
+  </fieldset>
+</body>
+</html>
